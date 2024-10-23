@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro-livros.css">
+</head> 
+<body>
+
+    <form id="meuFormulario" action="cadastra-livros.php" method="post"> 
+        <div><br>
+        <div class="box">           
+             <h1>CADASTRO DE LIVROS</h1>
+             <div class="input-container">
+                <label class="user-label" for="Titulo">Titulo:</label>
+                <input class="input" type="text" id="Titulo" name="Titulo" /><br>
+            </div>
+            <div>
+                <label class="user-label" for="Autor">Autor:</label>
+                <input class="input" type="text" id="Autor" name="Autor" /><br>
+            </div>
+            <div><br>
+                <label class="user-label" for="Editora">Editora:</label>
+                <input class="input" type="text" id="Editora" name="Editora" /><br> 
+            </div>
+            <div><br>
+                <label class="user-label" for="Sinopse">Sinopse:</label>
+                <input class="input" type="text" id="Sinopse" name="Sinopse" /><br>
+            </div>
+            <div><br>
+                <label class="user-label" for="AnoPublicacao">Ano Publicação:</label>
+                <input class="input" type="text" id="AnoPublicacao" name="AnoPublicacao" /><br>
+            </div>
+            <div><br>
+                <label class="user-label" for="Genero">Gênero:</label>
+                <input class="input" type="text" id="Genero" name="Genero" /><br>
+            </div>
+            <div><br>
+                <label class="user-label" for="Paginas">Páginas:</label>
+                <input class="input" type="text" id="Paginas" name="Paginas" /><br>
+            </div>
+
+            <div><br>
+                <div class="container">
+                <button class="botao" type="submit">Cadastrar</button>
+                <button class="botao" type="button" onclick="limparFormulario()">Limpar</button>
+                <br></div>
+                </div>
+        </div>
+    </div>  
+
+    <script>
+        function limparFormulario() {
+            document.getElementById('meuFormulario').reset();
+        }
+    </script>
+
+</body>
+</html>

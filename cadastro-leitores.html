@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro-leitores.css">
+</head> 
+<body>
+    
+    <div class="box">
+        <h1>CADASTRO DE LEITORES</h1>
+        <form id="meuFormulario" action="cadastra-leitores.php" method="post">
+            <div class="input-container">
+                <label class="user-label" for="Nome">Nome:</label>
+                <input class="input" type="text" id="Nome" name="Nome" />
+            </div>
+
+            <div class="input-container">
+                <label class="user-label" for="Celular">Celular:</label>
+                <input class="input" type="tel" id="Celular" name="Celular" />
+            </div>
+
+            <div class="input-container">
+                <label class="user-label" for="Email">E-mail:</label>
+                <input class="input" type="email" id="Email" name="Email" />
+            </div>
+
+            <div class="input-container">
+                <label class="user-label" for="RA">Registro do Aluno:</label>
+                <input class="input" type="text" id="RA" name="RA" />
+            </div>
+
+            <div class="input-container">
+                <label class="user-label" for="Endereco">Endereço:</label>
+                <input class="input" type="text" id="Endereco" name="Endereco" />
+            </div>
+
+            <div class="input-container">
+                <label class="user-label" for="Num_End">Número do Endereço:</label>
+                <input class="input" type="text" id="Num_End" name="Num_End" min="0" step="1" required />
+            </div>
+
+            <div class="input-container">
+                <label class="user-label" for="Bairro">Bairro:</label>
+                <input class="input" type="text" id="Bairro" name="Bairro" />
+            </div>
+
+            <div class="input-container">
+                <label class="user-label" for="Cidade">Cidade e Estado:</label>
+                <input class="input" type="text" id="Cidade" name="Cidade" />
+            </div>
+
+            <div class="input-container">
+                <label class="user-label" for="DtNasc">Data de Nascimento:</label>
+                <input type="date" class="input-date" id="DtNasc" name="DtNasc"> 
+            </div>
+
+            <div class="container">
+                <button class="botao" type="submit">Cadastrar</button>
+                <button class="botao" type="button" onclick="limparFormulario()">Limpar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function limparFormulario() {
+            document.getElementById('meuFormulario').reset();
+        }
+    </script>
+</body>
+</html>

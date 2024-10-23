@@ -1,0 +1,127 @@
+.box {
+    padding: 50px;
+    background: linear-gradient(#5d5d5d, #494949, #2b2b2b);
+    border-radius: 5px;
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px #494949;
+    margin-top: 50px;
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 3em; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.input-container {
+    position: relative;
+    width: 100%; 
+    max-width: 400px; 
+    margin-bottom: 20px; 
+}
+
+.input, .input-date {
+    border: 1px solid whitesmoke;
+    border-radius: 3rem;
+    background: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: whitesmoke;
+    transition: border 200ms ease-in-out;
+    width: 100%; /* Ocupa 100% da largura do contêiner pai */
+    position: relative;
+    outline: none;
+}
+
+.user-label {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: whitesmoke;
+    pointer-events: none;
+    transition: all 200ms ease-in-out;
+    background-color: transparent;
+    padding: 0 5px;
+}
+
+.input:focus, .input-date:focus {
+    outline: none;
+    border: 1.5px solid rgb(236, 161, 161);
+    box-shadow: 0px 4px 15px rgb(255, 192, 192);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    padding: 15px 25px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease; 
+    margin: 10px; 
+}
+
+.botao:hover {
+    background: linear-gradient(#ffc7c7,#d6a6a6,#c48e8e);
+    color: white;
+}
+
+.input-date {
+    border: 1px solid whitesmoke;
+    border-radius: 3rem;
+    background: none;
+    padding: 0.5px 10px;
+    font-size: 20px;
+    color: whitesmoke;
+    transition: border 200ms ease-in-out;
+    width: 100%;
+    position: relative;
+    outline: none;
+    position: relative;
+    width: 100%; 
+    max-width: 400px; 
+    margin-bottom: 20px; 
+}
+
+/* Estilo do placeholder e texto no campo de data */
+.input-date::-webkit-datetime-edit {
+color: whitesmoke;
+font-weight: bold;
+padding: 10px;
+}
+
+/* Remove a seta do input de data no Firefox */
+.input-date::-webkit-inner-spin-button {
+display: none;
+}
+
+/* Remove a seta do input de data no Chrome */
+.input-date::-webkit-calendar-picker-indicator {
+background: transparent;
+color: rgb(236, 161, 161);
+cursor: pointer;
+font-size: 18px;
+}
+
+/* Efeito ao focar no input de data */
+.input-date:focus {
+outline: none;
+border-color: rgb(236, 161, 161);
+box-shadow: 0px 4px 15px rgb(255, 192, 192);
+}
+
+/* Estilo ao clicar no ícone do calendário */
+.input-date:active::-webkit-calendar-picker-indicator {
+background-color:rgb(236, 161, 161);
+color: white;
+}

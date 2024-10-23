@@ -1,0 +1,32 @@
+.box {
+    padding: 50px;
+    background: linear-gradient(#5d5d5d, #494949, #2b2b2b);
+    border-radius: 5px;
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow:0px 4px 10px #494949;
+    margin-top: 200px;
+}
+
+.container-botoes {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.botao {
+    padding: 15px 25px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease; 
+    margin: 10px 0; 
+}
+
+.botao:hover {
+    background: linear-gradient(#ffc7c7,#d6a6a6,#c48e8e);
+    color: white;
+}
